@@ -1,0 +1,78 @@
+<table>
+  <thead>
+    <tr>
+      <th attr.colspan="{{colSpan}}" > Employee Details</th>
+     
+    </tr>
+  </thead>
+  <tr>
+    <td>First Name</td>
+    <td>{{firstName}}</td>
+  </tr>
+  <tr>
+    <td>Last Name</td>
+    <td>{{lastName}}</td>
+  </tr>
+  <tr>
+    <td>Gender</td>
+    <td>{{gender}}</td>
+  </tr>
+  <tr>
+    <td>Age</td>
+    <td>{{age}}</td>
+    </tr>
+    <td>Address</td>
+    <td>{{address ? address: "Adress not found"}}</td>
+
+    <tr>
+      <td>Full Name</td>
+      <td>{{fullName()}}</td>
+    </tr>
+    <tr>
+      
+    </tr>
+</table>
+<br>
+<br>
+<div class="container">
+  <img src="{{imagePath}}"/>
+  <h2>or property binding</h2>
+  <img [src] = "imagePath">
+
+  <p>to non string data binding , we must use property binding </p>
+
+  <button [disabled] = "isDisable">Click me!</button>
+  <br>
+  <br>
+  <br>
+  <p>More than one class binding</p>
+  <button class="colorClass" [class]="classesToapply" >Button</button>
+
+  <br>
+  
+  <br>
+  
+  <br>
+  <p>only one class binding</p>
+  <button class="classesToapply" [class.btn1changeColor]="isApplyColorClass" >Button</button>
+
+  <br>
+  <br>
+
+  <br>
+  <p>Ng class binding</p>
+  <button class="classesToapply" [ngClass]="addClass()" >Button</button>
+  <br>
+  <br>
+ 
+  <br>
+  <p> single style binding</p>
+  <button style="color:yellow  ; background-color:black" [style.font-size] = "isBold ? '26px' : 'normal'" >Yellow Color</button>
+
+  <br>
+  <br>
+ 
+  <br>
+  <p> multiple style binding</p>
+  <button style="color:yellow  ; background-color:black" [ngStyle] = "addStyle()" >Yellow Color</button>
+</div>

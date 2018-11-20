@@ -1,0 +1,25 @@
+td{
+ border: 1px solid black; 
+ padding: 5px;
+
+}
+thead{
+    border: 1px solid black; 
+    padding: 5px;
+    text-align: center;
+}
+.colorClass{
+    padding: 5px;
+    color: green;
+}
+.btn1Italic{
+    font-family: italic;
+    font-size: 20px;
+    color: red;
+
+}
+.btn1changeColor{
+   font-weight: 700;
+    background-color: green;
+    border-radius: 4px;
+}
